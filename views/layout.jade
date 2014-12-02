@@ -1,0 +1,64 @@
+doctype 5 html
+html
+	head
+	script(src="/javascripts/jquery.js")
+	script(src="/javascripts/bootstrap.min.js")
+	script(src="/javascripts/jquery.prettyPhoto.js")
+	script(src="/javascripts/jquery.isotope.min.js")
+	script(src="/javascripts/main.js")
+	link(href="/stylesheets/bootstrap.min.css", rel="stylesheet")
+	link(href="/stylesheets/font-awesome.min.css", rel="stylesheet")
+	link(href="/stylesheets/prettyPhoto.css", rel="stylesheet")
+	link(href="/stylesheets/animate.css", rel="stylesheet")
+	link(href="/stylesheets/main.css", rel="stylesheet")
+	script(src="/javascripts/site.js")
+	script(src="/socket.io/socket.io.js")
+
+	body(background="/public/images/slider/textura-cuadritos-azul.jpg/" style="background-attachment: fixed")
+		nav(class="navbar navbar-inverse navbar-fixed-top", role="navigation")
+			div(class="container")
+					div(class="navbar-header")
+						button(type="button" class="navbar-toggle collapsed",data-toggle="collapsed",data-target="#navbar",aria-expanded="false", aria-controls="navbar")
+							span(class="sr-only") boton de navegacion
+							span(class="icon-bar")
+							span(class="icon-var")
+							span(class="icon-var")
+						a(class="navbar-brand", href="#") TriviaOnline
+					div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+						ul(class="nav navbar-nav")
+							li(class="active")
+								a(href="/") Inicio
+							li(class="active")
+								a(href="#") Mi Perfil
+							li(class="active")
+								a(href="http://www.facebook.com") Facebook
+							li(class="active")
+								a(href="/contactos") Contactos
+							li(class="dropdown")
+								a(href="#", class="dropdown-toggle", data-toggle="dropdown") Partidas
+									i
+									ul(class="dropdown-menu")
+										li
+											a(href="/pregunta/") Lista de Usuarios 
+										li
+											a(href="/respuesta/") Historial de Partidas
+										li
+											a(href="/puntos/") Ver puntajes
+										li
+											a(href="/") Denuncias
+							li(class="dropdown")
+								a(href="#", class="dropdown-toggle", data-toggle="dropdown") Administrador
+									i
+									ul(class="dropdown-menu")
+										li
+											a(href="/pregunta/") Registrar Categorias 
+										li
+											a(href="/respuesta/") Registrar Preguntas
+										li
+											a(href="/categoria/") Registrar Respuestas
+										li
+											a(href="/puntos/") Lista de preguntas y respuestas
+										li
+											a(href="/") Eliminar preguntas y respuestas
+
+		block content

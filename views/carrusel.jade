@@ -1,0 +1,45 @@
+section#main-slider.no-margin
+ div(class="carousel slide wet-asphalt")
+  div(class="carousel-inner")
+   div(class="item active", style="background-image: url(/images/slider/bg1.jpg)")
+    div(class="container")
+     div(class="row")
+      div(class="col-sm-12")
+       div(class="carousel-content centered")
+        h2(class="animation animated-item-1") Sala General
+        div(class="row")
+         aside(class="col-sm-4 col-sm-push-8")
+            h2 Usuarios conectados
+            div(class="panel panel-default")
+             div(class="panel-heading")
+             div(class="panel-body")
+              table(class="table table-bordered")
+               tr
+                th(class="text-primary") Usuarios en sala
+               tr
+                td
+                 ul#ususarios
+         div(class="col-sm-8 col-sm-pull-4")
+          div(class="blog")
+           div(class="blog-item",style="background-image: url(/images/form/form2.jpg)")
+            div(class="container page")
+             div(class="row")
+              div(class="col-xs-2")
+              div(class="col-xs-8")
+               div(class="row")
+                 h2 Esperando jugadores
+                 div(class="panel panel-default")
+                  div(class="panel-heading")
+                  div(class="panel-body")
+                   table(class="table table-default")
+                    tr
+                     th(class="text-primary") Mensajes
+                    tr
+                     td
+                      ul#mensajes
+                  div(class="panel-footer")
+                   input(type="text", class="form-control", placeholder="Escribir mensaje" id="mensaje")
+                 p
+                  a(href="/creaciondepartidas/", class="btn btn-primary btn-lg active", role="button") Crear Partida
+                 p
+                  a(href="/", class="btn btn-primary btn-lg active", role="button") Cancelar

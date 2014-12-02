@@ -1,0 +1,33 @@
+extends layout
+block content
+	form(class="form-horizontal" role="form")
+		div(class="form-group")
+		div(class="container")
+			header(class="jumbotrom hero-spacer")
+				h3 Sala de Espera
+				div(class="thumbnail")
+					section(id="saladeespera", class="container")
+						div(class="row")
+							div(class="col-sm-6")
+								div(class="item active", style="background-image: url(/images/slider/textura-cuadritos-azul.jpg)")
+									h2 Iniciar la partida cuando quieras
+									p Si estás jugando con más jugadores, no les hagas esperar, o se aburrirán y se irán.
+									p Pueden seguir entrando jugadores una vez haya empezado la partida.
+									div(class="form-group")
+										div(class="col-lg-offset-1 col-lg-3")
+											div(class="caption")
+												a(type="button" class="btn btn-primary" value="Empezar Partida" href="#")
+													span(class="glyphicon glyphicon-save") Empezar Partida
+							form(class="center",role="form")
+								div(class="col-sm-6")
+									h2 Usuarios Activos
+
+								div(class="col-lg-4")
+									h2 Chat 
+									div(class="panel panel-default")
+										div(class="panel-heading") Registrate
+										div(class="panel-body")
+												div(class="input-group")
+													span(class="input-group-addon")
+														input(type="text", class="form-control" placeholder="Nickname" id="nickname")
+	div#content
